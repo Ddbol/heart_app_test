@@ -15,10 +15,10 @@ st.set_page_config(
 )
 
 # Set environment variables to disable GPU
-## 1 bypass tensorflow  login?
-## '3' means "only show errors" (suppress info, warnings, and debug messages)
+
 ## This disables GPU usage for TensorFlow
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+## '3' means "only show errors" (suppress info, warnings, and debug messages)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Suppress TensorFlow logging
 
 # Clear any existing TensorFlow session
