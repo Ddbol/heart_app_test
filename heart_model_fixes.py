@@ -70,7 +70,8 @@ def make_prediction(input_data):
 st.title('Heart Disease Prediction')
 
 # Display an image
-st.image('heart.png', use_container_width=True)
+#st.image('heart.png', use_container_width=True)
+st.image('heart.png', width=400)
 
 st.write(""" 
 Please fill in the information below, and we'll predict if you might be at risk for heart disease based on the data you provide.  
